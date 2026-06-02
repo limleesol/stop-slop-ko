@@ -1,0 +1,82 @@
+[
+  {
+    "query": "이 보고서 초안 좀 봐줘. 읽는데 계속 AI가 쓴 것 같은 느낌이 나서 어색해. '이를 통해', '중요한 시사점을 제공합니다' 이런 표현들이 너무 많은 것 같아서",
+    "should_trigger": true
+  },
+  {
+    "query": "블로그 글 하나 썼는데 너무 딱딱하고 형식적으로 느껴져. 좀 더 자연스럽게 다듬어줄 수 있어? '또한', '따라서', '나아가' 이런 표현이 반복되는 것 같고",
+    "should_trigger": true
+  },
+  {
+    "query": "ChatGPT한테 회사 소개 문구 작성 부탁했는데 뭔가 어색해. '다양한 솔루션을 제공하며 혁신적인 가치를 창출합니다' 이런 식으로 나왔거든. 이거 사람이 쓴 것처럼 바꿔줘",
+    "should_trigger": true
+  },
+  {
+    "query": "제안서 마무리 단락인데 너무 AI티가 나. '앞으로도 지속적인 발전을 위해 노력하겠습니다. 귀사의 많은 관심 부탁드립니다' 이런 거 빼고 실제로 우리가 뭘 할지로 끝내고 싶어",
+    "should_trigger": true
+  },
+  {
+    "query": "이 문장 고쳐줘: '이 기술은 산업 전반에 혁신적인 변화를 가져올 것으로 생각됩니다. 전문가들은 향후 더욱 발전될 것이라고 말합니다.'",
+    "should_trigger": true
+  },
+  {
+    "query": "기획서를 GPT로 초안 잡았는데 제출하기 전에 손 좀 봐야 할 것 같아. 특히 '단순히 비용의 문제가 아니라 가치의 문제입니다', '물론 어려운 측면도 있습니다. 하지만' 이런 구조가 너무 많아",
+    "should_trigger": true
+  },
+  {
+    "query": "글 교정 부탁해. 내용은 맞는데 읽으면 뭔가 ChatGPT가 쓴 것 같은 느낌. '살펴보도록 하겠습니다', '이와 같이 ~한다고 할 수 있습니다' 같은 표현 좀 정리해줘",
+    "should_trigger": true
+  },
+  {
+    "query": "칼럼 초안인데 AI 냄새 좀 빼줘. 논점은 괜찮은데 표현이 너무 공식적이고 판에 박혀 있어",
+    "should_trigger": true
+  },
+  {
+    "query": "팀장한테 보내는 주간 업무 보고서인데 내가 쓴 건데도 되게 AI스럽게 느껴져. '다양한 업무를 효율적으로 처리하였으며 전반적인 성과를 도출하였습니다' 이런 거 사람 말로 바꿔줘",
+    "should_trigger": true
+  },
+  {
+    "query": "이 소논문 초록 AI 글쓰기 패턴 제거해줘. '본 연구는 ~를 목적으로 하며 이를 통해 ~를 도출하고자 한다. 이는 ~라는 점에서 의의가 있다'",
+    "should_trigger": true
+  },
+  {
+    "query": "이 영어 문장 한국어로 번역해줘: 'The data suggests that automation will significantly impact employment patterns over the next decade.'",
+    "should_trigger": false
+  },
+  {
+    "query": "이 보고서에서 맞춤법이랑 문법 틀린 곳 찾아줘. 특히 띄어쓰기 체크해줘",
+    "should_trigger": false
+  },
+  {
+    "query": "다음 단락을 더 간결하게 요약해줘. 핵심만 2-3문장으로",
+    "should_trigger": false
+  },
+  {
+    "query": "이 글 논리 구조가 맞는지 봐줘. 서론-본론-결론 흐름이 자연스러운지, 근거가 충분한지",
+    "should_trigger": false
+  },
+  {
+    "query": "영어로 된 논문 이걸 한국어로 자연스럽게 번역해줘. 학술적인 어투 유지해서",
+    "should_trigger": false
+  },
+  {
+    "query": "이 글 너무 길어. 절반 분량으로 줄여줄 수 있어?",
+    "should_trigger": false
+  },
+  {
+    "query": "이 텍스트에서 핵심 키워드 10개만 뽑아줘",
+    "should_trigger": false
+  },
+  {
+    "query": "cover letter 써줘. 마케팅 직군 지원하는데 경력 5년이고 디지털 마케팅 전문이야",
+    "should_trigger": false
+  },
+  {
+    "query": "이 초안 영어로 써줘. 비즈니스 이메일 스타일로",
+    "should_trigger": false
+  },
+  {
+    "query": "이 글 어투가 독자한테 너무 딱딱하게 느껴질 것 같아. 좀 더 친근한 톤으로 바꿔줄 수 있어?",
+    "should_trigger": false
+  }
+]
