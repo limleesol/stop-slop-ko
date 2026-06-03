@@ -1,6 +1,6 @@
 # Changelog
 
-날짜는 2026-06-03. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
+날짜는 YYYY-MM-DD. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
 ## [0.7.0] - 2026-06-03
 
