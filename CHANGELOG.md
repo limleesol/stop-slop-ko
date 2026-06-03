@@ -2,6 +2,16 @@
 
 날짜는 2026-06-03. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
+## [0.7.0] - 2026-06-03
+
+[관찰]/[규범] 분류 복구, 날조 금지 규칙 준수하도록 예시 교정, 레지스터 보존을 위한 복수 교정안 추가, 트리거 평가 파일명 변경 반영. / Restored [norm]/[observed] tagging, aligned examples with the no-fabrication rule, added multi-register outputs, updated trigger eval filename references.
+
+- **복구/Restored** SKILL.md 및 README.md 내 `[관찰]`/`[규범]` 태그 분류 복구. / Restored `[observed]`/`[norm]` pattern classifications.
+- **수정/Fixed** 예시 4, 5, 6: 원문에 없는 정보(구체적 숫자 및 대안 논리)를 지어내어 기술하던 모순을 해결하고 '날조 금지' 철칙에 맞게 교정. / Aligned examples 4, 5, and 6 with the no-fabrication rule by removing invented facts.
+- **수정/Fixed** 예시 1, 4, 5, 6: 글의 소통 목적을 보존할 수 있도록 레지스터별(보고서용 vs 대화형/제안용 등) 복수 교정안(After) 제시. / Added multi-register alternatives (report vs conversational/proposal) to preserve communicative intent.
+- **수정/Fixed** 예시 8, 10: 원문이 존댓말일 경우 교정안에서도 존댓말 레지스터가 그대로 유지되도록 수정 (반말 획일화 방지). / Fixed examples 8 and 10 to preserve polite style (존댓말) instead of converting to plain style.
+- **변경/Changed** README.md 내 트리거 데이터셋 참조 파일명 수정 (`eval_set.json` → `trigger_eval.json`). / Updated trigger dataset file references in README.md.
+
 ## [0.6.0] - 2026-06-02
 
 eval 프레임워크 구축, 예시 오류 수정, 레지스터 감지 단계 추가, description 최적화. / Eval framework, example fixes, register detection step, description optimization.
