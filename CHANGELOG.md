@@ -4,14 +4,16 @@
 
 ## [0.8.0] - 2026-07-06
 
-실사용 관찰 기반 패턴 3종 추가, Claude Code 스킬 로딩 호환성 정리. / Three patterns from real-world usage observations; Claude Code skill-loading compatibility cleanup.
+실사용 관찰 기반 패턴 추가, 작업 절차·출력 형식 명시, 표기 정리. / New patterns from real-world usage observations; explicit workflow/output format; notation cleanup.
+
+- **추가/Added** "작업 절차와 출력 형식" 섹션 — 교정문 전문 먼저, 주요 변경 3~5개 한 줄씩, slop 없으면 고치지 않는다고 답하기. 발동 후 행동이 미정의였던 공백 해소. / New "workflow and output format" section — corrected text first, 3–5 one-line change notes, decline to edit when the source has little slop. Fills the gap where post-trigger behavior was undefined.
 
 - **추가/Added** 줄표(—) 남용 패턴 — 영어 em dash 문체의 직수입, 문단당 1개 이하 기준. / Em-dash overuse pattern — imported from English LLM style; at most one per paragraph.
 - **추가/Added** 불릿 나열 의존 패턴 — 서술 문단이 뼈대, 불릿·표는 보조. / Bullet-list dependence pattern — prose paragraphs as the skeleton, bullets/tables as support.
 - **변경/Changed** 이분법 대조 규칙 확대 — "단순히" 없는 일반형 `X가 아니라 Y다`와 대조문 연쇄(2회 이상 반복) 금지 명시. / Extended the false-dichotomy rule to the plain "not X but Y" form and to stacked contrastive sentences.
 - **변경/Changed** 동어반복 부연에 문단 단위 기준 추가 — 새 정보 없는 문단은 삭제 후보. / Restatement rule now applies at paragraph level — paragraphs adding no new information are deletion candidates.
 - **변경/Changed** description 트리거에 "윤문", "퇴고", "리라이팅", "매끄럽게" 키워드 추가. / Added "윤문/퇴고/리라이팅/매끄럽게" (polish/rewrite) keywords to the trigger description.
-- **변경/Changed** frontmatter에서 비표준 `metadata` 블록 제거(Claude Code 스킬 로더 호환), 저자 정보는 본문 출처 절로 이동. / Removed the non-standard `metadata` frontmatter block for Claude Code skill-loader compatibility; author info moved to the Sources section.
+- **수정/Fixed** 표기 정리 — 수사적 질문 예시의 깨진 백틱, "예 :" 띄어쓰기 불일치, 끊긴 문장("핵심 규칙은 slop을 다룬다"), 줄표 규칙 설명문이 스스로 줄표를 쓰던 자기모순. / Notation cleanup — broken backtick in the rhetorical-question example, inconsistent "예 :" spacing, a dangling sentence, and the em-dash rule ironically using an em dash itself.
 
 ## [0.7.0] - 2026-06-03
 
