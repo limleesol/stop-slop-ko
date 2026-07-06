@@ -1,6 +1,6 @@
 # Changelog
 
-버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
+날짜는 YYYY-MM-DD. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
 ## [0.9.0] - 2026-07-06
 
