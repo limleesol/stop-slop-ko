@@ -43,6 +43,8 @@
 
 ## 사용법
 
+단일 SKILL.md 구조다. reference 분리본으로 20회 실행 테스트했을 때 Claude가 하위 파일을 한 번도 읽지 않아(0/20) 병합했다 (CHANGELOG 0.4.0 참고).
+
 - **Claude Code:** `skills/` 폴더 안에 이 폴더를 넣는다.
 - **Claude Cowork:** `.skill` 파일을 다운받아 설치한다.
 - **스킬 없이:** `SKILL.md` 전체를 프롬프트에 붙여 넣는다.
