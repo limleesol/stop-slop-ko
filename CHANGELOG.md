@@ -1,6 +1,17 @@
 # Changelog
 
-날짜는 2026-06-03. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
+버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
+
+## [0.8.0] - 2026-07-06
+
+실사용 관찰 기반 패턴 3종 추가, Claude Code 스킬 로딩 호환성 정리. / Three patterns from real-world usage observations; Claude Code skill-loading compatibility cleanup.
+
+- **추가/Added** 줄표(—) 남용 패턴 — 영어 em dash 문체의 직수입, 문단당 1개 이하 기준. / Em-dash overuse pattern — imported from English LLM style; at most one per paragraph.
+- **추가/Added** 불릿 나열 의존 패턴 — 서술 문단이 뼈대, 불릿·표는 보조. / Bullet-list dependence pattern — prose paragraphs as the skeleton, bullets/tables as support.
+- **변경/Changed** 이분법 대조 규칙 확대 — "단순히" 없는 일반형 `X가 아니라 Y다`와 대조문 연쇄(2회 이상 반복) 금지 명시. / Extended the false-dichotomy rule to the plain "not X but Y" form and to stacked contrastive sentences.
+- **변경/Changed** 동어반복 부연에 문단 단위 기준 추가 — 새 정보 없는 문단은 삭제 후보. / Restatement rule now applies at paragraph level — paragraphs adding no new information are deletion candidates.
+- **변경/Changed** description 트리거에 "윤문", "퇴고", "리라이팅", "매끄럽게" 키워드 추가. / Added "윤문/퇴고/리라이팅/매끄럽게" (polish/rewrite) keywords to the trigger description.
+- **변경/Changed** frontmatter에서 비표준 `metadata` 블록 제거(Claude Code 스킬 로더 호환), 저자 정보는 본문 출처 절로 이동. / Removed the non-standard `metadata` frontmatter block for Claude Code skill-loader compatibility; author info moved to the Sources section.
 
 ## [0.7.0] - 2026-06-03
 
