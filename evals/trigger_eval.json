@@ -69,7 +69,20 @@
   },
   {
     "query": "cover letter 써줘. 마케팅 직군 지원하는데 경력 5년이고 디지털 마케팅 전문이야",
-    "should_trigger": false
+    "should_trigger": true,
+    "note": "0.9.0 생성 모드 도입으로 false→true. 한국어 산문 생성 요청은 slop 방지를 위해 발동."
+  },
+  {
+    "query": "이 발표 원고 초안 퇴고 좀 해줘. 내일 발표라 오늘 안에 봐야 해",
+    "should_trigger": true
+  },
+  {
+    "query": "제품 소개 페이지에 들어갈 글 윤문 부탁해. 톤은 지금처럼 유지하고",
+    "should_trigger": true
+  },
+  {
+    "query": "다음 달 사내 뉴스레터에 실을 신규 입사자 환영 글 하나 써줘",
+    "should_trigger": true
   },
   {
     "query": "이 초안 영어로 써줘. 비즈니스 이메일 스타일로",

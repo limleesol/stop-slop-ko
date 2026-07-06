@@ -2,6 +2,19 @@
 
 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
+## [0.9.0] - 2026-07-06
+
+생성 모드 도입, 3중 반복 구조 통합, 채점표를 fail 조건으로 교체, eval 확장. / Generation mode; consolidated triple-redundant structure; replaced scoring rubric with fail conditions; expanded evals.
+
+- **추가/Added** 생성 모드 — 한국어 산문을 새로 쓸 때도 발동해 slop을 애초에 만들지 않는다. slop이 태어나는 순간은 교정 요청이 아니라 생성 요청이다. / Generation mode — the skill now triggers on requests to write new Korean prose, preventing slop at the source instead of only cleaning it up afterward.
+- **추가/Added** 긴 글 교정 순서 — 구조 slop(서론·결론·반복 문단) → 문단별 표현 slop → 전체 리듬. 문단 대응 유지, 전면 재작성 금지. / Long-text editing order — structural slop first, then per-paragraph phrasing, then overall rhythm; keep paragraph correspondence, no full rewrites.
+- **추가/Added** 레지스터 표 3종 확장 — 이메일·공지, 마케팅 카피·SNS, 기술 문서. / Three new registers — email/notice, marketing copy/SNS, technical docs.
+- **변경/Changed** 채점표(49/70) 삭제, "출력 전 필수 점검" fail 조건 5개로 교체 — LLM 자가 채점은 항상 후하게 나와 행동을 바꾸지 못한다. 검증 가능한 fail 조건(날조·길이 절반 이하·리듬 획일화·레지스터 이탈·마커 잔존)만 남김. / Removed the 49/70 scoring rubric in favor of five verifiable pre-output fail conditions — LLM self-scoring is reliably generous and changes nothing; checkable fail conditions do.
+- **변경/Changed** 빠른 체크리스트 삭제 — 핵심 규칙·상세 패턴과 3중 중복으로 동기화 비용만 발생. 핵심 규칙 11개가 빠른 스캔 층, 상세 패턴이 단일 정본. / Removed the quick checklist — it triplicated the rules and detail patterns, costing sync effort. The 11 core rules are the scan layer; detail patterns are the single source of truth.
+- **변경/Changed** description 재설계 — 과발동 위험 키워드("어색하다", "딱딱하다" 단독) 제거, 사문화된 패턴-인용 시나리오를 (1)에 통합, 생성 시나리오 (3) 추가, 제외에 "단순 어조 변경" 명시. / Redesigned description — dropped overfiring standalone keywords, merged the dead pattern-quoting scenario, added the generation scenario, excluded plain tone changes.
+- **수정/Fixed** `evals/evals.json` JSON 문법 오류(배열 미종결, 후행 쉼표)로 파일 전체가 파싱 불가였던 문제. / Fixed invalid JSON in `evals/evals.json` (unterminated array, trailing comma) that made the file unparseable.
+- **추가/Added** eval 3케이스 — 줄표·대조 연쇄, 불릿 의존(이메일 레지스터), 생성 모드. 트리거 eval에 퇴고·윤문·생성 요청 케이스 추가, cover letter 케이스는 생성 모드 도입으로 true로 전환. / Three new eval cases (em-dash/stacked antithesis, bullet dependence, generation mode); new trigger cases for 퇴고/윤문/generation; the cover-letter case flips to true under generation mode.
+
 ## [0.8.0] - 2026-07-06
 
 실사용 관찰 기반 패턴 추가, 작업 절차·출력 형식 명시, 표기 정리. / New patterns from real-world usage observations; explicit workflow/output format; notation cleanup.
