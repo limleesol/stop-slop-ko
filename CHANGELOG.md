@@ -2,6 +2,17 @@
 
 날짜는 YYYY-MM-DD. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
+## [0.12.0] - 2026-09-14
+
+실사용 교정에서 스킬을 적용한 뒤에도 남았던 유형 3개와, 목록 대조만으로 "고칠 게 없다"고 판정한 오판정을 반영. / Three pattern types that survived a real editing pass with the skill applied, plus the false "nothing to fix" verdict reached by pattern-list matching alone.
+
+- **추가/Added** "영어 어휘·관용구 직역" 절(표현 단위) — 어휘 직역(`이 기계에서는`, `그린다`, `알려진`), 관용구 직역(`금방 질린다`, `그리는 게 전부다`), 구문 직역(무생물의 소유 구문, 동명사 주어). 판정은 "영어를 보지 않고 말했다면 이 단어를 골랐을까". 부록 B(조사·명사화)와 역할을 나눔. / New "English lexical and idiom calques" section — lexical, idiom and construction calques, judged by whether a Korean speaker would pick the word without the English in view; split from Appendix B, which covers particles and nominalization.
+- **추가/Added** "개발 은어·공간 비유" 절(표현 단위) — `뜬다`·`죽으면`·`붙어 있다`·`올라간다`·`나간다`·`몫`을 독자가 넓은 문서에서 문자 그대로의 표현으로. 개발자끼리의 메모·커밋 메시지·팀 위키는 면제. / New "developer jargon and spatial metaphor" section — replaced with literal wording in documents for a broad audience; developer-only memos, commit messages and team wikis are exempt.
+- **추가/Added** "전제 누락" 절(구조 단위) — 대상 독자가 모르는 원인·조건을 건너뛴 문장. 답이 글 안에 있으면 앞으로 옮기고 묻지 않으며, 없으면 철칙 2에 따라 채우지 않고 교정문 뒤에서 묻는다. 질문은 전제 없이는 문장이 성립하지 않는 경우만, 한 번에 세 개 이하. 생성 모드에도 반영. / New "missing premise" section — move the premise forward when the text has it; otherwise never fill it in (iron rule 2) and ask after the edited text, at most three questions. Also applied to generation mode.
+- **추가/Added** 읽기 시험 — "slop이 거의 없다"는 판정을 패턴 목록 대조만으로 내리지 않고, 대상 독자의 자리에서 직역·은어·전제 누락 세 가지를 확인한 뒤에만 내린다. 교정 모드 절차와 출력 전 필수 점검 표에 반영. / Read test — a "barely any slop" verdict now requires checking calques, jargon and missing premises from the target reader's seat, not pattern matching alone; wired into the edit procedure and the pre-output checklist.
+- **변경/Changed** 핵심 규칙 11개 → 14개("번역·독자" 묶음 12~14 추가). 사물 주어 판정에 소유·행위 동사는 직역 절로 보내는 안내 추가. description 트리거에 번역투·번역체·어색한 비유 지적 추가. / Core rules 11 → 14; the false-agent rule now routes possession/action verbs to the calque section; description trigger now covers complaints about translationese and awkward metaphors.
+- **추가/Added** eval 6케이스 — 직역, 독자가 넓은 문서의 은어와 개발자 메모 면제(쌍), 글에 없는 전제는 묻기와 글 안에 있으면 묻지 않기(쌍), 목록 패턴이 없는 번역체 문단에서의 "거의 없음" 오판정. (총 27케이스) / Six eval cases — calques, jargon vs. developer-memo exemption (pair), ask vs. don't ask for premises (pair), and the false "barely any slop" verdict on a calque-only paragraph. 27 cases total.
+
 ## [0.11.3] - 2026-07-30
 
 전체 검토 반영 — 대화체 레지스터 면제 2건(오탐 수정), 상호 참조·형식·README 구조 정리. / Full-review pass — two conversational-register exemptions (false-positive fixes), cross-reference, formatting, and README structure cleanup.
