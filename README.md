@@ -46,17 +46,17 @@
 
 ## 사용법
 
-단일 SKILL.md 구조다 (근거: CHANGELOG 0.4.0).
+공통 규칙은 `SKILL.md`에 있다. 기술 문서·기획서·소개문은 `references/`의 해당 기준을 함께 읽는다. 여러 장르가 섞인 문서는 구간별로 적용한다.
 
 - **Claude Code:** `skills/` 폴더 안에 이 폴더를 넣는다.
-- **Claude Cowork:** 저장소를 클론하거나 `SKILL.md`를 받아 스킬 폴더에 넣는다.
-- **스킬 없이:** `SKILL.md` 전체를 프롬프트에 붙여 넣는다.
+- **Claude Cowork:** 저장소를 클론하거나 `SKILL.md`와 `references/`를 함께 받아 스킬 폴더에 넣는다.
+- **스킬 없이:** `SKILL.md`와 해당 장르의 참고 파일을 프롬프트에 붙여 넣는다.
 
 ---
 
 ## 검증 및 한계
 
-스킬 자체 평가 데이터셋은 [`evals/evals.json`](evals/evals.json)(현재 27케이스 — 레지스터별 면제/발동 쌍, 정보 보존·줄표 임계 회귀 검증 포함), 스킬 발동(trigger) 데이터셋은 [`evals/trigger_eval.json`](evals/trigger_eval.json)에서 볼 수 있다.
+스킬 자체 평가 데이터셋은 [`evals/evals.json`](evals/evals.json)(현재 34케이스 — 레지스터별 면제/발동 쌍, 정보 보존·줄표 임계 회귀 검증 포함), 스킬 발동(trigger) 데이터셋은 [`evals/trigger_eval.json`](evals/trigger_eval.json)에서 볼 수 있다.
 
 **2026-07 벤치마크 (0.11.0 시점).** 신규 케이스 10종으로 스킬 적용/미적용을 분리 실행했다. 채점은 파이썬 어설션 69개와 블라인드 A/B 판정으로 나눴다. 규칙 준수는 with 100%, without 94.2%. 블라인드 품질은 5:5. without은 양비론 골격과 무출처 권위 호소를 남겼고, 생성 과제에서 재료에 없는 수치를 지어냈다. 기본 모델도 대부분 잡는다. 스킬의 차이는 이 세 패턴에서 났다. 방법과 한계는 [`evals/benchmark/RESULTS.md`](evals/benchmark/RESULTS.md).
 
