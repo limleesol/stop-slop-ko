@@ -2,6 +2,13 @@
 
 날짜는 YYYY-MM-DD. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
+## [Unreleased]
+
+- 정보 보존 규칙에 단위·주기·조건·시제·확실성을 명시하고, 교정 예시의 사실 추가와 시제 변경을 수정했다.
+- 기술 설명에서 실제 이름과 설명용 별칭을 구분하고, 정의와 행동 지침을 분리하도록 했다. 필요한 권한·저장 위치 안내와 정확한 전문용어는 보존한다.
+- 출력 형식은 사용자 요청을 우선한다. 명사 쌓기는 본문에서 의미가 불명확한 경우만 고친다.
+- 평가 사례 6개를 추가했다. 기존 PR #9의 평가 사례와 별개이며 모델 평가 실행 결과는 아직 없다.
+
 ## [0.11.3] - 2026-07-30
 
 전체 검토 반영 — 대화체 레지스터 면제 2건(오탐 수정), 상호 참조·형식·README 구조 정리. / Full-review pass — two conversational-register exemptions (false-positive fixes), cross-reference, formatting, and README structure cleanup.
